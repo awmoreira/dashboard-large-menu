@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { faker } from "@faker-js/faker";
 import { Item } from "../types";
 
-const DATA_ARRAY = new Array(10000).fill(0).map((value, index) => ({
+const DATA_ARRAY = new Array(10000).fill(0).map((_, index) => ({
   id: index,
   externalId: "5023377855405,1",
   name: faker.lorem.words(5),

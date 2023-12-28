@@ -8,14 +8,15 @@ import DetailsItem from "./components/DetailsItem";
 import useSimulateFetch from "./hooks/useSimulateFetch";
 
 function App() {
-  const [searchTerm, setSearchTerm] = useState("search");
+  // const [searchTerm, setSearchTerm] = useState("search");
   const [hoveredItem, setHoveredItem] = useState<Item | null>(null);
   const [clickedItem, setClickedItem] = useState<Item | null>(null);
 
   const { loading, data } = useSimulateFetch(5000);
 
   function handleSearchInputChange(text: string) {
-    setSearchTerm(text);
+    console.log("🚀 ~ file: App.tsx:18 ~ handleSearchInputChange ~ text:", text)
+    // setSearchTerm(text);
   }
 
   const handleMouseEnter = (item: Item) => {

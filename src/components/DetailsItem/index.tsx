@@ -66,6 +66,7 @@ export default function DetailsItem({ clickedItem }: IDatailsItemProps) {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+    console.log("🚀 ~ file: index.tsx:69 ~ handleChange ~ event:", event)
     setValue(newValue);
   };
 
